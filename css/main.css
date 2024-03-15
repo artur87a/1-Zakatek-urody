@@ -21,8 +21,21 @@ nav .nav-link,
 nav .navbar-nav .show,
 nav .navbar-nav .nav-link.show,
 nav .navbar-brand,
-nav .fa-solid .fa-bars .navbar-nav .show > .nav.link {
+nav .fa-bars,
+nav .navbar-nav .show > .nav.link {
   color: #ffffff;
+}
+nav .span {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  justify-items: end;
+  align-items: end;
+  scale: 1.5;
+}
+nav .navbar-toggler {
+  border-color: white;
+  box-shadow: none;
 }
 nav .nav-link:focus,
 nav .nav-link:hover,
