@@ -12,10 +12,43 @@ body {
   font-weight: 200;
   font-style: normal;
   color: $primary-color;
+  background-color: $secondary-color;
 }
 
-@media (min-width: 1200px) {
-  body {
-    background-image: url(../img/logoBig.png);
+nav {
+  text-transform: uppercase;
+  font-weight: 500;
+  .nav-link,
+  .navbar-nav .show,
+  .navbar-nav .nav-link.show,
+  .navbar-brand,
+  .fa-solid .fa-bars .navbar-nav .show > .nav.link {
+    color: $white-color;
+  }
+
+  .nav-link:focus,
+  .nav-link:hover,
+  .navbar-nav .nav-link.active,
+  .navbar-nav .show > .nav.link {
+    color: $new-color;
+  }
+  .dropdown-menu {
+    background-color: $secondary-color;
+    border-color: white;
+    :hover {
+      background-color: transparent;
+    }
+    .dropdown-item {
+      color: white;
+    }
+    .dropdown-item:hover {
+      color: $new-color;
+    }
   }
 }
+
+// @media (min-width: 1200px) {
+//   body {
+//     background-image: url(../img/logoBig.png);
+//   }
+// }
