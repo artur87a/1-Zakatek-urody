@@ -28,7 +28,6 @@
   animation: animate 4s both;
 }
 .animationImage img:nth-child(2) {
-  width: 100%;
   height: 100%;
   animation: animate1 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s both;
 }
@@ -52,7 +51,7 @@
   }
   80% {
     opacity: 1;
-    transform: scale(1.5) rotate(0);
+    transform: scale(1.1) rotate(0);
   }
   100% {
     opacity: 0;
@@ -157,4 +156,151 @@ nav .dropdown-menu .dropdown-item {
 }
 nav .dropdown-menu .dropdown-item:hover {
   color: #dfc388;
+}
+
+.about i {
+  font-size: 30px;
+  margin-top: 20px;
+}
+.about .about-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.about .about-card-text {
+  font-size: 14px;
+}
+.about .about-hover:hover {
+  color: #ffffff;
+  transition: color 0.3s;
+}
+.about .about-hover {
+  transition: color 0.3s;
+}
+
+.about-hero {
+  position: relative;
+  background-image: url("../img/image2small.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #dfc388;
+  z-index: 0;
+}
+.about-hero .about-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -5;
+}
+.about-hero .about-hero-item {
+  margin: 10px 0;
+}
+.about-hero .about-hero-item i {
+  font-size: 36px;
+}
+.about-hero .about-hero-item .about-hero-title {
+  font-size: 24px;
+}
+
+.portfolio .carousel-item {
+  height: fit-content;
+  max-height: 800px;
+}
+.portfolio .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.4);
+  left: 0;
+  right: 0;
+  padding: 30px 0;
+}
+.portfolio .carousel-indicators {
+  padding-bottom: 20px;
+}
+.portfolio .carousel-item img {
+  width: 750px;
+  height: 750px;
+  object-fit: cover;
+}
+
+.card-group img {
+  width: auto;
+  height: 200px;
+}
+
+main {
+  color: black;
+}
+
+.prices .price-box {
+  margin: 20px;
+  border: 2px solid white;
+  width: auto;
+  padding: 25px;
+  box-shadow: 5px 2px 5px black;
+  font-size: 20px;
+  transition: scale 0.3s;
+}
+.prices .price-box i {
+  font-size: 26px;
+  padding: 0 5px;
+}
+.prices .price-box .price-title {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 24px;
+}
+.prices .price-box .price-tag {
+  font-weight: bold;
+  font-size: 30px;
+}
+.prices .price-box .btn-secondary {
+  align-items: baseline;
+  justify-content: baseline;
+  scale: 1.4;
+  transition: background-color 0.6s ease-in-out;
+  border: none;
+  transition: 0.5s;
+}
+.prices .price-box .btn-secondary:hover {
+  transition: background-color 0.6s ease-in-out;
+  color: #dfc388;
+  background-color: #ffffff;
+  scale: 1.5;
+  transition: 0.5s;
+}
+.prices .price-box:hover {
+  scale: 1.05;
+}
+.prices .price-info {
+  margin-top: 30px;
+}
+.prices .price-info a {
+  text-decoration: none;
+}
+.prices .supernova {
+  background-color: red;
+}
+
+@media (min-width: 768px) {
+  .hero-text h1 {
+    font-size: 42px;
+  }
+  .hero-text p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: 72px;
+  }
+  .about-hero {
+    background-image: url("../img/image2big.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  header.hero-img {
+    background-image: url(../img/image1big.jpg);
+  }
 }/*# sourceMappingURL=main.css.map */

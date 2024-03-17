@@ -31,7 +31,6 @@
     animation: animate 4s both;
   }
   img:nth-child(2) {
-    width: 100%;
     height: 100%;
     animation: animate1 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s both;
   }
@@ -60,7 +59,7 @@
 
   80% {
     opacity: 1;
-    transform: scale(1.5) rotate(0);
+    transform: scale(1.1) rotate(0);
   }
   100% {
     opacity: 0;
