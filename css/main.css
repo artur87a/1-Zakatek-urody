@@ -19,12 +19,10 @@
   width: 30%;
   border-radius: 50%;
   top: 20%;
-  -webkit-animation: animate 4s both;
   animation: animate 4s both;
 }
 .animationImage img:nth-child(2) {
   width: 100%;
-  -webkit-animation: animate1 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s both;
   animation: animate1 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s both;
 }
 .animationImage .slide-out-bck-center {
@@ -35,43 +33,47 @@
 .animation-text {
   position: absolute;
   top: 30%;
-  left: 60%;
-  animation: textDelay 5s ease-in-out;
+  left: 50%;
+  animation: textDelay 7s ease-in-out;
 }
 
-@-webkit-keyframes animate {
+@keyframes animate {
   0% {
-    opacity: 0 !important;
-    -webkit-transform: translateY(-1000px);
+    opacity: 0;
     transform: translateY(-1000px);
   }
   20% {
-    opacity: 0 !important;
+    opacity: 0;
   }
   25% {
-    opacity: 0.7 !important;
-    -webkit-transform: scale(0.4) rotate(-360deg);
+    opacity: 0.7;
     transform: scale(0.4) rotate(-360deg);
   }
   80% {
-    opacity: 1 !important;
-    -webkit-transform: scale(1.1) rotate(0);
+    opacity: 1;
     transform: scale(1.1) rotate(0);
   }
   100% {
-    opacity: 0 !important;
-    -webkit-transform: scale(0) rotate(0);
+    opacity: 0;
     transform: scale(0) rotate(0);
   }
 }
-@-webkit-keyframes animate1 {
+@keyframes animate1 {
   0% {
-    -webkit-transform: translateZ(-1400px);
     transform: translateZ(-1400px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes animate1 {
+  0% {
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
     transform: translateZ(0);
     opacity: 1;
   }
@@ -108,7 +110,7 @@ body {
   font-weight: 200;
   font-style: normal;
   color: #ffffff;
-  background-color: #605f5e;
+  background-color: rgb(1, 1, 1);
 }
 
 html {
@@ -119,25 +121,33 @@ nav {
   text-transform: uppercase;
   font-weight: 500;
   z-index: 300;
+  font-size: 25px;
+  height: 5%;
 }
 nav .navbar-toggler {
   padding: 10px 15px;
 }
-nav .navbar-brand {
+nav .navbar-toggler:focus {
+  box-shadow: 0px 0px 7px 3px rgb(223, 195, 136);
+}
+
+.navbar-brand {
   font-weight: bold;
 }
-nav .navbar-brand span {
+.navbar-brand span {
   color: #dfc388;
 }
-nav .nav-link,
-nav .navbar-nav .show,
-nav .navbar-nav .nav-link.show,
-nav .navbar-brand,
-nav .fa-bars,
-nav .navbar-nav .show > .nav.link {
+
+.nav-link,
+.navbar-nav .show,
+.navbar-nav .nav-link.show,
+.navbar-brand,
+.fa-bars,
+.navbar-nav .show > .nav.link {
   color: #ffffff;
 }
-nav .span {
+
+.span {
   position: absolute;
   top: 30px;
   right: 30px;
@@ -145,23 +155,29 @@ nav .span {
   align-items: end;
   scale: 1.5;
 }
-nav .nav-link:focus,
-nav .nav-link:hover,
-nav .navbar-nav .nav-link.active,
-nav .navbar-nav .show > .nav.link {
+
+.fa-bars:hover {
   color: #dfc388;
 }
-nav .dropdown-menu {
-  background-color: #605f5e;
+
+.nav-link:focus,
+.nav-link:hover,
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav.link {
+  color: #dfc388;
+}
+
+.dropdown-menu {
+  background-color: #a5a4a2;
   border-color: white;
 }
-nav .dropdown-menu :hover {
+.dropdown-menu :hover {
   background-color: transparent;
 }
-nav .dropdown-menu .dropdown-item {
+.dropdown-menu .dropdown-item {
   color: white;
 }
-nav .dropdown-menu .dropdown-item:hover {
+.dropdown-menu .dropdown-item:hover {
   color: #dfc388;
 }
 
@@ -172,7 +188,7 @@ nav .dropdown-menu .dropdown-item:hover {
 }
 @media screen and (max-width: 576px) {
   .animation-text {
-    top: 5%;
+    top: 4%;
   }
   .animation-text h1 {
     font-size: 22px;

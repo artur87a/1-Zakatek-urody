@@ -1,5 +1,6 @@
 @import "./colors";
 @import "./animation2";
+@import "./variables";
 
 * {
   box-sizing: border-box;
@@ -13,7 +14,7 @@ body {
   font-weight: 200;
   font-style: normal;
   color: $primary-color;
-  background-color: $secondary-color;
+  background-color: rgb(1, 1, 1);
 }
 
 html {
@@ -24,55 +25,65 @@ nav {
   text-transform: uppercase;
   font-weight: 500;
   z-index: 300;
+  font-size: 25px;
+  height: 5%;
 
   .navbar-toggler {
     padding: 10px 15px;
   }
-
-  .navbar-brand {
-    font-weight: bold;
-    span {
-      color: $new-color;
-    }
-  }
-
-  .nav-link,
-  .navbar-nav .show,
-  .navbar-nav .nav-link.show,
-  .navbar-brand,
-  .fa-bars,
-  .navbar-nav .show > .nav.link {
-    color: $white-color;
-  }
-  .span {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    justify-items: end;
-    align-items: end;
-    scale: 1.5;
-  }
-
-  .nav-link:focus,
-  .nav-link:hover,
-  .navbar-nav .nav-link.active,
-  .navbar-nav .show > .nav.link {
-    color: $new-color;
-  }
-  .dropdown-menu {
-    background-color: $secondary-color;
-    border-color: white;
-    :hover {
-      background-color: transparent;
-    }
-    .dropdown-item {
-      color: white;
-    }
-    .dropdown-item:hover {
-      color: $new-color;
-    }
+  .navbar-toggler:focus {
+    box-shadow: $box-shadow-toggler;
   }
 }
+
+.navbar-brand {
+  font-weight: bold;
+  span {
+    color: $new-color;
+  }
+}
+
+.nav-link,
+.navbar-nav .show,
+.navbar-nav .nav-link.show,
+.navbar-brand,
+.fa-bars,
+.navbar-nav .show > .nav.link {
+  color: $white-color;
+}
+.span {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  justify-items: end;
+  align-items: end;
+  scale: 1.5;
+}
+
+.fa-bars:hover {
+  color: $new-color;
+}
+
+.nav-link:focus,
+.nav-link:hover,
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav.link {
+  color: $new-color;
+}
+.dropdown-menu {
+  background-color: $secondary-color;
+  border-color: white;
+  :hover {
+    background-color: transparent;
+  }
+  .dropdown-item {
+    color: white;
+  }
+  .dropdown-item:hover {
+    color: $new-color;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .animationImage img:nth-of-type(2) {
     content: url("../img/heroImageBig.jpeg");
@@ -80,7 +91,7 @@ nav {
 }
 @media screen and (max-width: 576px) {
   .animation-text {
-    top: 5%;
+    top: 4%;
     h1 {
       font-size: 22px;
     }
