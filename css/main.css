@@ -3,8 +3,7 @@
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
-  overflow: hidden;
-  align-items: flex-start;
+  background: #000000;
   height: 100vh;
   transition: all;
 }
@@ -98,6 +97,9 @@
  * See http://animista.net/license for more info. 
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
+*,
+*::before,
+*::after,
 * {
   box-sizing: border-box;
   margin: 0;
@@ -199,6 +201,65 @@ nav .navbar-toggler:focus {
   color: #dfc388;
 }
 
+.btn-contact {
+  position: relative;
+  display: inline-block;
+  top: 50%;
+  left: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  border: #dfc388 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  font-size: 1.5rem;
+  transition: background-color 0.3s, color 0.3s;
+  text-shadow: 0 0 0.125em rgba(0, 0, 0, 0.5), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 #dfc388, 0 0 0.5em 0 #dfc388;
+}
+
+.btn-contact::before {
+  content: " ";
+  position: absolute;
+  background-color: #dfc388;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+.btn-contact::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #dfc388;
+  opacity: 0;
+  box-shadow: 0 0 2em 0.5em #dfc388;
+  transition: opacity 100ms linear;
+  z-index: -1;
+  text-transform: uppercase;
+}
+
+.btn-contact:hover,
+.btn-contact:focus {
+  background: #dfc388;
+  color: black;
+  text-shadow: none;
+  transform: scale(1);
+}
+
+.btn-contact:hover::before,
+.btn-contact:focus::before {
+  opacity: 1;
+}
+
+.btn-contact:hover::after,
+.btn-contact:focus::after {
+  opacity: 1;
+}
+
 .aboutus {
   color: #000000;
 }
@@ -247,10 +308,12 @@ nav .navbar-toggler:focus {
     top: 4%;
   }
   .animation-text h1 {
-    font-size: 22px;
+    font-size: 12px;
   }
   .animation-text p {
-    font-size: 12px;
+    font-size: 8px;
+    text-overflow: clip;
+    text-wrap: wrap;
   }
 }
 @media screen and (min-width: 1280px) {
