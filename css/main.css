@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   position: relative;
-  background: #000000;
   height: 100vh;
   transition: all;
 }
@@ -12,11 +11,13 @@
   height: auto;
 }
 .animationImage img:nth-child(1) {
+  position: absolute;
   width: 40%;
   border-radius: 50%;
   animation: animate 4s both;
 }
 .animationImage img:nth-child(2) {
+  position: absolute;
   width: 100%;
   animation: animate1 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s both;
 }
@@ -208,7 +209,7 @@ nav .navbar-toggler:focus {
   border: #dfc388 0.125em solid;
   padding: 0.25em 1em;
   border-radius: 0.25em;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   transition: background-color 0.3s, color 0.3s;
   text-shadow: 0 0 0.125em rgba(0, 0, 0, 0.5), 0 0 0.45em currentColor;
   box-shadow: inset 0 0 0.5em 0 #dfc388, 0 0 0.5em 0 #dfc388;
@@ -314,13 +315,13 @@ nav .navbar-toggler:focus {
 }
 @media screen and (min-width: 1200px) {
   .animation-text {
-    top: 25%;
+    top: 15%;
   }
   .animation-text h1 {
-    font-size: 36px;
+    font-size: 26px;
   }
   .animation-text p {
-    font-size: 22px;
+    font-size: 16px;
     text-wrap: wrap;
   }
 }

@@ -120,7 +120,7 @@ nav {
   border: #dfc388 0.125em solid;
   padding: 0.25em 1em;
   border-radius: 0.25em;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   transition:
     background-color 0.3s,
     color 0.3s;
@@ -264,12 +264,12 @@ nav {
   //   background-color: yellow;
   // }
   .animation-text {
-    top: 25%;
+    top: 15%;
     h1 {
-      font-size: 36px;
+      font-size: 26px;
     }
     p {
-      font-size: 22px;
+      font-size: 16px;
       text-wrap: wrap;
     }
   }
