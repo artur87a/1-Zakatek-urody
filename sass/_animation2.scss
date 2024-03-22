@@ -1,5 +1,5 @@
 .animationImage {
-  // position: relative;
+  position: relative;
   // display: flex;
   // height: 100vh;
   // justify-content: center;
@@ -18,10 +18,11 @@
   transition: all;
 
   img {
-    position: absolute;
+    position: relative;
     // backface-visibility: hidden;
     opacity: 1;
     height: auto;
+    width: auto;
   }
 
   img:nth-child(1) {
@@ -33,6 +34,9 @@
   img:nth-child(2) {
     position: absolute;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 35% 50%;
     animation: animate1 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s both;
   }
 
@@ -46,11 +50,17 @@
 
 .animation-text {
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(100%);
   left: 50%;
-
-  animation: textDelay 7s ease-in-out;
+  padding: 16px;
+  text-shadow: 1px 1px 1px black;
+  // animation: textDelay 7s ease-in-out;
 }
+
+////////////////////////////
+/////// KEYFRAMES//////////
+/// ///////////////////////
 
 @keyframes animate {
   0% {
