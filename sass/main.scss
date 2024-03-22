@@ -120,7 +120,7 @@ nav {
   border: #dfc388 0.125em solid;
   padding: 0.25em 1em;
   border-radius: 0.25em;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   transition:
     background-color 0.3s,
     color 0.3s;
@@ -230,18 +230,15 @@ nav {
     text-align: center;
   }
 }
-@media (min-width: 576px) {
-  .animationImage {
-    max-height: 290px;
-    background-color: rgb(0, 255, 47);
-  }
-}
+
+////////////////////
+///MEDIA///////////
+/// ///////////////
+///
+// @media (min-width: 576px) {
+// }
 
 @media screen and (max-width: 576px) {
-  .animationImage {
-    max-height: 220px;
-    background-color: rgb(0, 255, 47);
-  }
   .animation-text {
     top: 4%;
     h1 {
@@ -255,18 +252,28 @@ nav {
   }
 }
 @media (min-width: 768px) {
-  .animationImage {
-    max-height: 520px;
-    background-color: blue;
-  }
+  // .animationImage {
+  //   max-height: 520px;
+  //   background-color: blue;
+  // }
 }
 
 @media screen and (min-width: 1200px) {
-  .animationImage {
-    max-height: 720px;
-    background-color: yellow;
+  // .animationImage {
+  //   max-height: 720px;
+  //   background-color: yellow;
+  // }
+  .animation-text {
+    top: 25%;
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 22px;
+      text-wrap: wrap;
+    }
   }
-  .animationImage img:nth-of-type(2) {
-    content: url("../img/heroImageBig.jpeg");
-  }
+}
+.animationImage img:nth-of-type(2) {
+  content: url("../img/heroImageBig.jpeg");
 }
