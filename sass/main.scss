@@ -187,6 +187,10 @@ nav {
 
 .aboutus {
   color: $black-color;
+  cursor: pointer;
+  &-icon {
+    font-size: 30px;
+  }
 }
 
 //==========================================
@@ -270,7 +274,7 @@ nav {
   //   background-color: yellow;
   // }
   .animation-text {
-    top: 15%;
+    top: 5%;
     h1 {
       font-size: 26px;
     }

@@ -14,6 +14,7 @@
 }
 .animationImage img:nth-child(1) {
   position: absolute;
+  top: 2%;
   width: 40%;
   border-radius: 50%;
   animation: animate 4s both;
@@ -34,10 +35,11 @@
 .animation-text {
   position: absolute;
   top: 50%;
-  transform: translateY(100%);
+  transform: translateY(40%);
   left: 50%;
   padding: 16px;
   text-shadow: 1px 1px 1px black;
+  animation: textDelay 7s ease-in-out;
 }
 
 @keyframes animate {
@@ -50,11 +52,11 @@
   }
   25% {
     opacity: 0.7;
-    transform: scale(0.4) rotate(-360deg);
+    transform: scale(0.2) rotate(-360deg);
   }
   80% {
     opacity: 1;
-    transform: scale(1.1) rotate(0);
+    transform: scale(0.8) rotate(0);
   }
   100% {
     opacity: 0;
@@ -101,6 +103,15 @@
  * See http://animista.net/license for more info.
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
+.bi::before {
+  display: inline-block;
+  content: "";
+  vertical-align: -0.125em;
+  background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>");
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+}
+
 *,
 *::before,
 *::after,
@@ -271,6 +282,10 @@ nav .navbar-toggler:focus {
 
 .aboutus {
   color: #000000;
+  cursor: pointer;
+}
+.aboutus-icon {
+  font-size: 30px;
 }
 
 .footer {
@@ -327,7 +342,7 @@ nav .navbar-toggler:focus {
 }
 @media screen and (min-width: 1200px) {
   .animation-text {
-    top: 15%;
+    top: 5%;
   }
   .animation-text h1 {
     font-size: 26px;
