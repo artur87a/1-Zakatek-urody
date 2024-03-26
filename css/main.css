@@ -103,15 +103,6 @@
  * See http://animista.net/license for more info.
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
-.bi::before {
-  display: inline-block;
-  content: "";
-  vertical-align: -0.125em;
-  background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>");
-  background-repeat: no-repeat;
-  background-size: 1rem 1rem;
-}
-
 *,
 *::before,
 *::after,
@@ -282,10 +273,17 @@ nav .navbar-toggler:focus {
 
 .aboutus {
   color: #000000;
-  cursor: pointer;
+  text-shadow: 1px 1px 10px black;
 }
 .aboutus-icon {
   font-size: 30px;
+}
+.aboutus-box {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.aboutus-box:hover {
+  transform: scale(1.15);
 }
 
 .footer {
@@ -327,7 +325,7 @@ nav .navbar-toggler:focus {
   text-align: center;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 576px) {
   .animation-text {
     top: 4%;
   }
@@ -340,7 +338,26 @@ nav .navbar-toggler:focus {
     text-wrap: wrap;
   }
 }
+.aboutus-icon {
+  font-size: 12px;
+}
+.aboutus-box {
+  cursor: pointer;
+}
+.aboutus-box h3 {
+  font-size: 12px;
+}
+.aboutus-box p {
+  font-size: 10px;
+}
+.aboutus-box:hover {
+  transform: scale(1.01);
+}
+
 @media screen and (min-width: 1200px) {
+  .animationImage img:nth-of-type(2) {
+    content: url("../img/heroImageBig.jpeg");
+  }
   .animation-text {
     top: 5%;
   }
@@ -351,7 +368,4 @@ nav .navbar-toggler:focus {
     font-size: 16px;
     text-wrap: wrap;
   }
-}
-.animationImage img:nth-of-type(2) {
-  content: url("../img/heroImageBig.jpeg");
 }/*# sourceMappingURL=main.css.map */

@@ -187,9 +187,16 @@ nav {
 
 .aboutus {
   color: $black-color;
-  cursor: pointer;
+  text-shadow: $text-shadow;
   &-icon {
     font-size: 30px;
+  }
+  &-box {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.15);
+    }
   }
 }
 
@@ -248,7 +255,7 @@ nav {
 // @media (min-width: 576px) {
 // }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 576px) {
   .animation-text {
     top: 4%;
     h1 {
@@ -261,6 +268,24 @@ nav {
     }
   }
 }
+.aboutus {
+  &-icon {
+    font-size: 12px;
+  }
+  &-box {
+    h3 {
+      font-size: 12px;
+    }
+    p {
+      font-size: 10px;
+    }
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+}
+
 @media (min-width: 768px) {
   // .animationImage {
   //   max-height: 520px;
@@ -273,6 +298,9 @@ nav {
   //   max-height: 720px;
   //   background-color: yellow;
   // }
+  .animationImage img:nth-of-type(2) {
+    content: url("../img/heroImageBig.jpeg");
+  }
   .animation-text {
     top: 5%;
     h1 {
@@ -283,7 +311,4 @@ nav {
       text-wrap: wrap;
     }
   }
-}
-.animationImage img:nth-of-type(2) {
-  content: url("../img/heroImageBig.jpeg");
 }
