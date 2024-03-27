@@ -328,6 +328,8 @@ nav .navbar-toggler:focus {
 }
 .footer__box {
   font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
 }
 .footer__box-desktop {
   display: none;

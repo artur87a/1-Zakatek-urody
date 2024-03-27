@@ -240,6 +240,8 @@ nav {
 
   &__box {
     font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
   }
   &__box-desktop {
     display: none;
