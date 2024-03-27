@@ -330,6 +330,7 @@ nav .navbar-toggler:focus {
   font-size: 1.4rem;
   display: flex;
   justify-content: center;
+  transition: all 0.6s;
 }
 .footer__box-desktop {
   display: none;
@@ -353,7 +354,7 @@ nav .navbar-toggler:focus {
   padding-left: 0;
 }
 .footer__box-link:hover {
-  color: #ffffff;
+  color: #dfc388;
 }
 .footer__bottom-text {
   padding: 2em;

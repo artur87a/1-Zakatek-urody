@@ -242,7 +242,9 @@ nav {
     font-size: 1.4rem;
     display: flex;
     justify-content: center;
+    transition: all 0.6s;
   }
+
   &__box-desktop {
     display: none;
   }
@@ -269,7 +271,7 @@ nav {
     }
 
     &:hover {
-      color: $white-color;
+      color: $new-color;
     }
   }
   &__bottom-text {
