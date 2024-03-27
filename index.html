@@ -14,7 +14,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://kit.fontawesome.com/90ae60bbef.js" crossorigin="anonymous"></script>
 
@@ -120,7 +121,7 @@
                 <div class="row text-center">
 
 
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="fade-right">
                         <div class="aboutus-box m-3 p-4 p-lg-5 border text-dark">
                             <h3>Profesjonalizm i Doświadczenie</h3>
                             <i class="bi bi-person-arms-up aboutus-icon"></i>
@@ -132,7 +133,7 @@
 
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="fade-right">
                         <div class="aboutus-box m-3 p-4 p-lg-5 border text-light bg-dark">
                             <h3>Wysokiej Jakości Produkty i Usługi</h3>
                             <i class="bi bi-gem aboutus-icon"></i>
@@ -144,7 +145,7 @@
 
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="fade-left">
                         <div class="aboutus-box m-3 p-4 p-lg-5 border text-dark">
                             <h3>Przyjazna Atmosfera i Komfort</h3>
                             <i class="bi bi-people aboutus-icon"></i>
@@ -157,7 +158,7 @@
 
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-3 " data-aos="fade-left">
                         <div class="aboutus-box m-3 p-4 p-lg-5 border text-light bg-dark">
                             <h3>Personalizacja i Indywidualne podejście</h3>
                             <i class="bi bi-person-bounding-box aboutus-icon"></i>
@@ -175,10 +176,12 @@
 
 
                         <div class="row text-center">
-                            <div class="col-sm-6 col-md-6 col-lg-6 aboutus-image">
+                            <div class="col-sm-6 col-md-6 col-lg-6 aboutus-image" data-aos="fade-up"
+                                data-aos-duration="3000">
                                 <img src="./img/istockphoto-157650138-1024x1024.jpg" alt="">
                             </div>
-                            <div class="col-sm-6 col-md-6 col-lg-6 aboutus-image-text">
+                            <div class="col-sm-6 col-md-6 col-lg-6 aboutus-image-text" data-aos="fade-down"
+                                data-aos-duration="3000">
                                 <h3>Nasz Personel</h3>
                                 <h4>Anna</h4>
                                 <p>Technik usług kosmetycznych, Technik sterylizacji medycznej
@@ -195,6 +198,7 @@
                                     nowoczesnej technologi w kosmetyce.
                                     Właściciel salonu.</p>
                             </div>
+
 
 
 
@@ -284,7 +288,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
