@@ -34,12 +34,18 @@
 
 .animation-text {
   position: absolute;
-  top: 50%;
+  top: -10%;
   transform: translateY(40%);
   left: 50%;
   padding: 16px;
   text-shadow: 1px 1px 1px black;
   animation: textDelay 7s ease-in-out;
+}
+.animation-text h3 {
+  font-size: 10px;
+}
+.animation-text p {
+  font-size: 8px;
 }
 
 @keyframes animate {
@@ -273,17 +279,44 @@ nav .navbar-toggler:focus {
 
 .aboutus {
   color: #000000;
-  text-shadow: 1px 1px 10px black;
+}
+.aboutus p {
+  text-shadow: 1px 1px 10px rgb(74, 74, 73);
 }
 .aboutus-icon {
-  font-size: 30px;
+  font-size: 14px;
 }
 .aboutus-box {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
+.aboutus-box h3 {
+  font-size: 18px;
+}
 .aboutus-box:hover {
-  transform: scale(1.15);
+  transform: scale(1.01);
+}
+
+.aboutus-image img {
+  height: 100%;
+  width: 100%;
+  background-image: cover;
+}
+
+.aboutus-image-text {
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.aboutus-image-text h3 {
+  margin-top: 5%;
+  font-size: 36px;
+}
+.aboutus-image-text h4 {
+  font-size: 28px;
+}
+.aboutus-image-text p {
+  font-size: 18px;
 }
 
 .footer {
@@ -325,47 +358,35 @@ nav .navbar-toggler:focus {
   text-align: center;
 }
 
-@media screen and (min-width: 576px) {
-  .animation-text {
-    top: 4%;
-  }
-  .animation-text h1 {
-    font-size: 12px;
-  }
-  .animation-text p {
-    font-size: 8px;
-    text-overflow: clip;
-    text-wrap: wrap;
-  }
-}
-.aboutus-icon {
-  font-size: 12px;
-}
-.aboutus-box {
-  cursor: pointer;
-}
-.aboutus-box h3 {
-  font-size: 12px;
-}
-.aboutus-box p {
-  font-size: 10px;
-}
-.aboutus-box:hover {
-  transform: scale(1.01);
-}
-
 @media screen and (min-width: 1200px) {
   .animationImage img:nth-of-type(2) {
     content: url("../img/heroImageBig.jpeg");
   }
   .animation-text {
-    top: 5%;
+    position: absolute;
+    top: 15%;
+    transform: translateY(40%);
+    left: 50%;
+    padding: 16px;
+    text-shadow: 1px 1px 1px black;
+    animation: textDelay 7s ease-in-out;
   }
   .animation-text h1 {
-    font-size: 26px;
+    font-size: 36px;
   }
   .animation-text p {
     font-size: 16px;
-    text-wrap: wrap;
+  }
+  .aboutus-icon {
+    font-size: 15px;
+  }
+  .aboutus-box h3 {
+    font-size: 24px;
+  }
+  .aboutus-box p {
+    font-size: 11px;
+  }
+  .aboutus-box:hover {
+    transform: scale(1.15);
   }
 }/*# sourceMappingURL=main.css.map */

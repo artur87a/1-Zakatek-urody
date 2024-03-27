@@ -187,16 +187,44 @@ nav {
 
 .aboutus {
   color: $black-color;
-  text-shadow: $text-shadow;
+  p {
+    text-shadow: $text-shadow;
+  }
   &-icon {
-    font-size: 30px;
+    font-size: 14px;
   }
   &-box {
     cursor: pointer;
     transition: transform 0.3s ease;
-    &:hover {
-      transform: scale(1.15);
+    h3 {
+      font-size: 18px;
     }
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+}
+.aboutus-image {
+  img {
+    height: 100%;
+    width: 100%;
+    background-image: cover;
+  }
+}
+
+.aboutus-image-text {
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+  h3 {
+    margin-top: 5%;
+    font-size: 36px;
+  }
+  h4 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 18px;
   }
 }
 
@@ -256,34 +284,6 @@ nav {
 // }
 
 @media screen and (min-width: 576px) {
-  .animation-text {
-    top: 4%;
-    h1 {
-      font-size: 12px;
-    }
-    p {
-      font-size: 8px;
-      text-overflow: clip;
-      text-wrap: wrap;
-    }
-  }
-}
-.aboutus {
-  &-icon {
-    font-size: 12px;
-  }
-  &-box {
-    h3 {
-      font-size: 12px;
-    }
-    p {
-      font-size: 10px;
-    }
-    cursor: pointer;
-    &:hover {
-      transform: scale(1.01);
-    }
-  }
 }
 
 @media (min-width: 768px) {
@@ -294,21 +294,39 @@ nav {
 }
 
 @media screen and (min-width: 1200px) {
-  // .animationImage {
-  //   max-height: 720px;
-  //   background-color: yellow;
-  // }
   .animationImage img:nth-of-type(2) {
     content: url("../img/heroImageBig.jpeg");
   }
+
   .animation-text {
-    top: 5%;
+    position: absolute;
+    top: 15%;
+    transform: translateY(40%);
+    left: 50%;
+    padding: 16px;
+    text-shadow: 1px 1px 1px black;
+    animation: textDelay 7s ease-in-out;
     h1 {
-      font-size: 26px;
+      font-size: 36px;
     }
     p {
       font-size: 16px;
-      text-wrap: wrap;
+    }
+  }
+  .aboutus {
+    &-icon {
+      font-size: 15px;
+    }
+    &-box {
+      h3 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 11px;
+      }
+      &:hover {
+        transform: scale(1.15);
+      }
     }
   }
 }

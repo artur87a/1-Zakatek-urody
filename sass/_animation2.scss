@@ -39,12 +39,18 @@
 
 .animation-text {
   position: absolute;
-  top: 50%;
+  top: -10%;
   transform: translateY(40%);
   left: 50%;
   padding: 16px;
   text-shadow: 1px 1px 1px black;
   animation: textDelay 7s ease-in-out;
+  h3 {
+    font-size: 10px;
+  }
+  p {
+    font-size: 8px;
+  }
 }
 
 ////////////////////////////
