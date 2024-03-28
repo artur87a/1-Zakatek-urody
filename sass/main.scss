@@ -229,9 +229,45 @@ nav {
 }
 
 //==========================================
+// PRICING TABLE
+//==========================================
+.pricing-table {
+  font-size: 16px;
+  opacity: 0.9;
+  padding: 30px 30px;
+}
+
+.pricing-image {
+  position: absolute;
+  background-image: url(../img/heroImageBig.jpeg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  object-fit: cover;
+  object-position: 35% 50%;
+}
+.pricing-text {
+  position: absolute;
+  opacity: 0.2;
+}
+.section-title-pricing {
+  display: flex;
+  font-size: 36px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  padding: 20px 20px;
+}
+
+//==========================================
 // FOOTER
 //==========================================
 .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   color: $white-color;
   background-color: $black-color;
   .wrapper {
