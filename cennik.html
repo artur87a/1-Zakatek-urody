@@ -29,7 +29,7 @@
             <!-- <img src="img/zakatekurodylogo1.png" alt=""> -->
             <a class="navbar-brand" href="#"><span><i class="fa-solid fa-venus"></span></i> Zakątek
                 <span>Urody</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button id="navBtn" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="fa-solid fa-bars"></span>
@@ -78,141 +78,183 @@
             </div>
         </div>
     </nav>
-
-
-
     <main>
-        <div class="pricing-image">
-            <section class="pricing-table">
-
-                <table class="table table-bordered table-light prcing-text " data-aos="flip-left"
-                    data-aos-duration="3000">
-                    <h2 class="section-title-pricing" data-aos="fade-up" data-aos-duration="1500">Cennik</h2>
-                    <div class="underline" data-aos="fade-up"></div>
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Usługa</th>
-                            <th scope="col">Opis</th>
-                            <th scope="col">Czas zabiegu</th>
-                            <th scope="col">Cena</th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>cieniowanie</td>
-                            <td>-</td>
-                            <td>120 min</td>
-                            <td>600 zł</td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>pedicure</td>
-                            <td>-</td>
-                            <td>45min</td>
-                            <td>500 zł</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <!-- <td colspan="2">manicure </td> -->
-                            <td>manciure</td>
-                            <td>-</td>
-                            <td>60 min</td>
-                            <td>200 zł</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>henna</td>
-                            <td>-</td>
-                            <td>30 min</td>
-                            <td>200 zł</td>
-
-                        </tr>
-
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>henna</td>
-                            <td>-</td>
-                            <td>30 min</td>
-                            <td>200 zł</td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>henna</td>
-                            <td>-</td>
-                            <td>30 min</td>
-                            <td>200 zł</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6</th>
-                            <td>henna</td>
-                            <td>-</td>
-                            <td>30 min</td>
-                            <td>200 zł</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">7</th>
-                            <td>henna</td>
-                            <td>-</td>
-                            <td>30 min</td>
-                            <td>200 zł</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">8</th>
-                            <td>henna</td>
-                            <td>-</td>
-                            <td>30 min</td>
-                            <td>200 zł</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">9</th>
-                            <td>henna</td>
-                            <td>-</td>
-                            <td>30 min</td>
-                            <td>200 zł</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">9</th>
-                            <td>henna</td>
-                            <td>-</td>
-                            <td>30 min</td>
-                            <td>200 zł</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">9</th>
-                            <td>henna</td>
-                            <td>-</td>
-                            <td>30 min</td>
-                            <td>200 zł</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">9</th>
-                            <td>henna</td>
-                            <td>-</td>
-                            <td>30 min</td>
-                            <td>200 zł</td>
-                        </tr>
+        <div class="pricing-image ">
+            <h2 class="section-title-pricing" data-aos="fade-up" data-aos-duration="1500">Cennik</h2>
+            <div class="underline" data-aos="fade-up"></div>
 
 
+            <section id="#manicure" class="container  py-3 ">
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle btn-lg " href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Manicure</a>
 
-
-
-
-
-
-
-
-                    </tbody>
-
-                </table>
+                    <div class="dropdown-menu price-menu position-relative " id="forcetranslate">
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Manicure</th>
+                                    <th scope="col">Cena</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hybrydowy</td>
+                                    <td>110 zl</td>
+                                </tr>
+                                <tr>
+                                    <td>Uzupełnienie żelowe</td>
+                                    <td>140 zl </td>
+                                </tr>
+                                <tr>
+                                    <td>Przedłużanie</td>
+                                    <td>160 zl</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </section>
-        </div>
 
+            <section id="#rzesy" class="container py-3 ">
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle btn-lg" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Rzęsy & Brwi
+                    </a>
+                    <div class="dropdown-menu price-menu position-relative" id="forcetranslate">
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Rzęsy & Brwi</th>
+                                    <th scope="col">Cena</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hybrydowy</td>
+                                    <td>110 zl</td>
+                                </tr>
+                                <tr>
+                                    <td>Uzupełnienie żelowe</td>
+                                    <td>140 zl </td>
+                                </tr>
+                                <tr>
+                                    <td>Przedłużanie</td>
+                                    <td>160 zl</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section id="#pedicure" class="container py-3">
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle btn-lg" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Pedicure
+                    </a>
+                    <div class="dropdown-menu price-menu position-relative" id="forcetranslate">
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Pedicure</th>
+                                    <th scope="col">Cena</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hybrydowy</td>
+                                    <td>110 zl</td>
+                                </tr>
+                                <tr>
+                                    <td>Uzupełnienie żelowe</td>
+                                    <td>140 zl </td>
+                                </tr>
+                                <tr>
+                                    <td>Przedłużanie</td>
+                                    <td>160 zl</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section id="#depilacja" class="container py-3">
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle btn-lg" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Depilacja
+                    </a>
+                    <div class="dropdown-menu price-menu position-relative " id="forcetranslate">
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Depilacja</th>
+                                    <th scope="col">Cena</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hybrydowy</td>
+                                    <td>110 zl</td>
+                                </tr>
+                                <tr>
+                                    <td>Uzupełnienie żelowe</td>
+                                    <td>140 zl </td>
+                                </tr>
+                                <tr>
+                                    <td>Przedłużanie</td>
+                                    <td>160 zl</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section id="#zabiegi" class="container py-3">
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle btn-lg" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Zabiegi
+                    </a>
+                    <div class="dropdown-menu price-menu position-relative " id="forcetranslate">
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Depilacja</th>
+                                    <th scope="col">Cena</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hybrydowy</td>
+                                    <td>110 zl</td>
+                                </tr>
+                                <tr>
+                                    <td>Uzupełnienie żelowe</td>
+                                    <td>140 zl </td>
+                                </tr>
+                                <tr>
+                                    <td>Przedłużanie</td>
+                                    <td>160 zl</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+        </div>
     </main>
+
     <footer class="footer">
         <div class="wrapper">
 
@@ -265,3 +307,35 @@
 </body>
 
 </html>
+
+
+<!-- <main>
+        <div class="pricing-image">
+            <h2 class="section-title-pricing" data-aos="fade-up" data-aos-duration="1500">Cennik</h2>
+            <div class="underline" data-aos="fade-up"></div>
+            <section id="#manicure" class=" container manicure  py-3">
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle btn-lg" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Manicure
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Manciure paznokci <span>200 zl</span></a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+
+                </ul>
+
+
+        </div>
+
+
+        </section>
+
+
+        </div>
+
+    </main> -->

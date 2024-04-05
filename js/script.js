@@ -19,3 +19,29 @@ const handleCurrentYear = () => {
 };
 handleCurrentYear();
 navBtn.addEventListener("click", handleNav);
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const dropdownToggleButtons = document.querySelectorAll(
+//     ".price-menu .dropdown-toggle"
+//   );
+
+//   dropdownToggleButtons.forEach((button) => {
+//     button.addEventListener("click", () => {
+//       const dropdownMenu = button.nextElementSibling;
+
+//       // Toggle the 'show' class on the dropdown menu
+//       dropdownMenu.classList.toggle("show");
+//     });
+//   });
+
+//   // Close dropdown menus when clicking outside
+//   document.addEventListener("click", (e) => {
+//     if (!e.target.closest(".price-menu .dropdown")) {
+//       document
+//         .querySelectorAll(".price-menu .dropdown-menu")
+//         .forEach((menu) => {
+//           menu.classList.remove("show");
+//         });
+//     }
+//   });
+// });

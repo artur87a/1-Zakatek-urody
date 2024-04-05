@@ -16,7 +16,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-  color: $primary-color;
+  color: white;
   background-color: rgb(1, 1, 1);
 }
 
@@ -36,7 +36,7 @@ html {
   height: 5px;
   width: 100px;
   margin: 0 auto 40px;
-  background-color: $new-color;
+  background-color: $gold-color;
 }
 
 .section-wrapper {
@@ -67,7 +67,7 @@ nav {
 .navbar-brand {
   font-weight: bold;
   span {
-    color: $new-color;
+    color: $gold-color;
   }
 }
 
@@ -77,7 +77,7 @@ nav {
 .navbar-brand,
 .fa-bars,
 .navbar-nav .show > .nav.link {
-  color: $white-color;
+  color: white;
 }
 .span {
   position: absolute;
@@ -89,28 +89,47 @@ nav {
 }
 
 .fa-bars:hover {
-  color: $new-color;
+  color: $gold-color;
 }
 
 .nav-link:focus,
 .nav-link:hover,
 .navbar-nav .nav-link.active,
 .navbar-nav .show > .nav.link {
-  color: $new-color;
+  color: $gold-color;
 }
 .dropdown-menu {
-  background-color: $secondary-color;
+  background-color: black;
   border-color: white;
-  :hover {
-    background-color: transparent;
-  }
-  .dropdown-item {
-    color: white;
-  }
-  .dropdown-item:hover {
-    color: $new-color;
+  width: 100%;
+  display: none;
+  show {
+    display: block;
   }
 }
+
+.dropdown-item {
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.dropdown-item:hover {
+  color: $gold-color;
+}
+
+// .dropdown-menu show {
+//   position: relative;
+//   display: block;
+//   margin: 0;
+//   width: 100%;
+//   height: 200%;
+//   transform: translate(0, 59px);
+//   background-color: #ffffff; // Set background color
+//   border: 1px solid #cccccc; // Add border
+//   border-radius: 4px; // Add border radius
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Add box shadow
+//   padding: 10px; // Add padding
+//   z-index: 1000; // Adjust z-index if needed
+// }
 
 //==========================================
 // HEADER BUTTON
@@ -186,7 +205,7 @@ nav {
 //==========================================
 
 .aboutus {
-  color: $black-color;
+  color: black;
   p {
     text-shadow: $text-shadow;
   }
@@ -231,11 +250,11 @@ nav {
 //==========================================
 // PRICING TABLE
 //==========================================
-.pricing-table {
-  font-size: 16px;
-  opacity: 0.9;
-  padding: 30px 30px;
-}
+// .pricing-table {
+//   font-size: 16px;
+//   opacity: 0.9;
+//   padding: 30px 30px;
+// }
 
 .pricing-image {
   position: absolute;
@@ -247,10 +266,7 @@ nav {
   object-fit: cover;
   object-position: 35% 50%;
 }
-.pricing-text {
-  position: absolute;
-  opacity: 0.2;
-}
+
 .section-title-pricing {
   display: flex;
   font-size: 36px;
@@ -261,6 +277,76 @@ nav {
   padding: 20px 20px;
 }
 
+// .price {
+//   background-color: black;
+//   position: relative;
+//   height: 60px;
+//   width: auto;
+//   button {
+//     position: absolute;
+//     right: 10px;
+//   }
+// }
+
+.btn {
+  font-size: 30px;
+  background-color: black;
+  opacity: 0.7;
+  width: 100%;
+}
+
+// .price-section-wrapper {
+//   display: grid;
+//   position: relative;
+// }
+
+#forcetranslate {
+  transform: translate(0px, 0px) !important;
+}
+
+// main .dropdown-toggle::after {
+//   border-left: 2em solid;
+// }
+// main .dropdown-item {
+//   display: block;
+//   background-color: black;
+//   width: 100%;
+//   font-size: 20px;
+// }
+// .price-menu {
+//   display: none;
+//   background-color: black;
+//   width: 100%;
+//   font-size: 20px;
+//   text-align: center;
+//   z-index: 1000;
+//   opacity: 0.6;
+//   overflow: hidden;
+// }
+
+// main .dropdown {
+//   display: block;
+// }
+
+// main .dropdown-menu .price-menu show {
+//   display: block;
+//   height: 299px;
+//   position: relative;
+// }
+// .dropdown-menu .price-menu {
+//   position: none;
+//   display: block;
+// }
+
+// .price-menu .dropdown-menu show {
+//   display: block;
+// }
+
+// main .dropdown {
+//   position: relative;
+//   display: flex;
+// }
+
 //==========================================
 // FOOTER
 //==========================================
@@ -268,15 +354,22 @@ nav {
   position: fixed;
   bottom: 0;
   width: 100%;
-  color: $white-color;
-  background-color: $black-color;
+  color: white;
+  background-color: black;
+  padding: 5px;
+  display: grid;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 3000;
   .wrapper {
     padding: 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    height: 75px;
   }
 
   &__box {
     font-size: 1.4rem;
-    display: flex;
     justify-content: center;
     transition: all 0.6s;
   }
@@ -298,7 +391,7 @@ nav {
   &__box-link {
     padding: 0 0.3em;
     font-size: 3.6rem;
-    color: $white-color;
+    color: white;
     text-decoration: none;
     transition: color 0.3s;
 
@@ -307,12 +400,16 @@ nav {
     }
 
     &:hover {
-      color: $new-color;
+      color: $gold-color;
     }
   }
   &__bottom-text {
-    padding: 2em;
+    padding: 20px;
     text-align: center;
+    position: relative;
+    bottom: 0;
+    height: 10px;
+    font-size: 14px;
   }
 }
 
