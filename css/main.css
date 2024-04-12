@@ -333,6 +333,7 @@ nav .navbar-toggler:focus {
   background-attachment: fixed;
   object-fit: cover;
   object-position: 35% 50%;
+  padding: 160px;
 }
 
 .section-title-pricing {
@@ -350,23 +351,51 @@ nav .navbar-toggler:focus {
   background-color: black;
   opacity: 0.7;
   width: 100%;
+  transition: all 3s;
+}
+.btn :hover {
+  color: #dfc388;
+}
+
+.dropdown-menu {
+  animation: 1s slidedown ease-in-out;
 }
 
 #forcetranslate {
   transform: translate(0px, 0px) !important;
 }
 
+.price-menu {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  text-align: center;
+  z-index: 1000;
+  border: none;
+  padding: 0;
+  height: auto;
+}
+
+.table {
+  animation: 0.8s focus;
+  border-collapse: collapse;
+  color: red;
+  width: 100%;
+}
+
+.scrollable-table {
+  height: 300px;
+  overflow-y: auto;
+}
+
 .footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
-  color: white;
+  text-align: center;
+  max-height: 1%;
   background-color: black;
-  padding: 5px;
-  display: grid;
-  justify-content: center;
-  flex-wrap: wrap;
-  z-index: 3000;
 }
 .footer .wrapper {
   padding: 5px 5px 5px;
@@ -412,6 +441,16 @@ nav .navbar-toggler:focus {
   font-size: 14px;
 }
 
+@media screen and (max-width: 576px) {
+  .scrollable-table {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .pricing-image {
+    padding: 115px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .animationImage img:nth-of-type(2) {
     content: url("../img/heroImageBig.jpeg");
@@ -442,5 +481,27 @@ nav .navbar-toggler:focus {
   }
   .aboutus-box:hover {
     transform: scale(1.15);
+  }
+}
+.pricing-image {
+  padding: 70px 5px;
+}
+
+@keyframes slidedown {
+  from {
+    transform: translateY(-10%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes focus {
+  from {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0px);
+    opacity: 1;
   }
 }/*# sourceMappingURL=main.css.map */

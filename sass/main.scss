@@ -265,6 +265,7 @@ nav {
   background-attachment: fixed;
   object-fit: cover;
   object-position: 35% 50%;
+  padding: 160px;
 }
 
 .section-title-pricing {
@@ -277,90 +278,81 @@ nav {
   padding: 20px 20px;
 }
 
-// .price {
-//   background-color: black;
-//   position: relative;
-//   height: 60px;
-//   width: auto;
-//   button {
-//     position: absolute;
-//     right: 10px;
-//   }
-// }
-
 .btn {
   font-size: 30px;
   background-color: black;
   opacity: 0.7;
   width: 100%;
+  transition: all 3s;
+  :hover {
+    color: $gold-color;
+  }
 }
 
-// .price-section-wrapper {
-//   display: grid;
-//   position: relative;
-// }
+.dropdown-menu {
+  animation: 1s slidedown ease-in-out;
+}
 
 #forcetranslate {
   transform: translate(0px, 0px) !important;
 }
 
 // main .dropdown-toggle::after {
-//   border-left: 2em solid;
-// }
-// main .dropdown-item {
-//   display: block;
-//   background-color: black;
-//   width: 100%;
-//   font-size: 20px;
-// }
-// .price-menu {
-//   display: none;
-//   background-color: black;
-//   width: 100%;
-//   font-size: 20px;
-//   text-align: center;
-//   z-index: 1000;
-//   opacity: 0.6;
-//   overflow: hidden;
+//   border-bottom: 0.01em solid;
 // }
 
-// main .dropdown {
-//   display: block;
-// }
+.price-menu {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  text-align: center;
+  z-index: 1000;
+  border: none;
+  padding: 0;
+  height: auto;
+}
 
-// main .dropdown-menu .price-menu show {
-//   display: block;
-//   height: 299px;
-//   position: relative;
-// }
-// .dropdown-menu .price-menu {
-//   position: none;
-//   display: block;
-// }
+.table {
+  animation: 0.8s focus;
+  border-collapse: collapse;
+  color: red;
+  width: 100%;
 
-// .price-menu .dropdown-menu show {
-//   display: block;
-// }
+  // tbody tr :nth-of-type(even) {
+  //   background-color: red;
+  // }
+}
 
-// main .dropdown {
-//   position: relative;
-//   display: flex;
-// }
+.scrollable-table {
+  height: 300px; //
+  overflow-y: auto;
+}
 
+// .dropdown-menu .table tbody tr:nth-of-type(even) {
+//   background-color: #a10c0c !important;
+// }
 //==========================================
 // FOOTER
 //==========================================
 .footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
-  color: white;
+  text-align: center;
+  max-height: 1%;
+
+  // color: white;
   background-color: black;
-  padding: 5px;
-  display: grid;
-  justify-content: center;
-  flex-wrap: wrap;
-  z-index: 3000;
+  // padding: 5px 0;
+  // display: flex;
+  // justify-content: center;
+  // flex-wrap: wrap;
+  // z-index: 2;
+  // bottom: 0;
+  // padding: 3em 1em;
+  // border-top: 1px solid black;
+
   .wrapper {
     padding: 5px 5px 5px;
     display: flex;
@@ -420,7 +412,16 @@ nav {
 // @media (min-width: 576px) {
 // }
 
+@media screen and (max-width: 576px) {
+  .scrollable-table {
+    height: 200px;
+  }
+}
+
 @media screen and (min-width: 576px) {
+  .pricing-image {
+    padding: 115px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -465,5 +466,28 @@ nav {
         transform: scale(1.15);
       }
     }
+  }
+}
+.pricing-image {
+  padding: 70px 5px;
+}
+
+@keyframes slidedown {
+  from {
+    transform: translateY(-10%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes focus {
+  from {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0px);
+    opacity: 1;
   }
 }

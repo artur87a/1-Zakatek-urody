@@ -29,7 +29,7 @@
             <!-- <img src="img/zakatekurodylogo1.png" alt=""> -->
             <a class="navbar-brand" href="#"><span><i class="fa-solid fa-venus"></span></i> Zakątek
                 <span>Urody</span></a>
-            <button id="navBtn" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="fa-solid fa-bars"></span>
@@ -37,18 +37,24 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#aboutus">O Nas</a>
 
+
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html" button
+                            onclick="topFunction()">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Usługi</a>
+                        <a class="nav-link" href="index.html#aboutus">O nas</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="index.html#services">Usługi</a>
                     </li>
+                    <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cennik</a>
+                        <a class="nav-link" href="/cennik.html">Cennik</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://booksy.com/pl-pl/157520_zakatek-urody_paznokcie_23280_lodz"
@@ -79,7 +85,7 @@
         </div>
     </nav>
     <main>
-        <div class="pricing-image ">
+        <div class="pricing-image position-relative">
             <h2 class="section-title-pricing" data-aos="fade-up" data-aos-duration="1500">Cennik</h2>
             <div class="underline" data-aos="fade-up"></div>
 
@@ -87,10 +93,10 @@
             <section id="#manicure" class="container  py-3 ">
                 <div class="dropdown">
                     <a class="btn btn-secondary dropdown-toggle btn-lg " href="#" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">Manicure</a>
+                        data-bs-toggle="dropdown" aria-expanded="false"><span>Manicure</span></a>
 
-                    <div class="dropdown-menu price-menu position-relative " id="forcetranslate">
-                        <table class="table">
+                    <div class="dropdown-menu price-menu position-relative" id="forcetranslate">
+                        <table class="table table-striped">
                             <thead class="thead-dark">
                                 <tr>
                                     <th scope="col">Manicure</th>
@@ -119,11 +125,9 @@
             <section id="#rzesy" class="container py-3 ">
                 <div class="dropdown">
                     <a class="btn btn-secondary dropdown-toggle btn-lg" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Rzęsy & Brwi
-                    </a>
+                        aria-expanded="false"><span>Rzęsy & Brwi</span></a>
                     <div class="dropdown-menu price-menu position-relative" id="forcetranslate">
-                        <table class="table">
+                        <table class="table table-striped">
                             <thead class="thead-dark">
                                 <tr>
                                     <th scope="col">Rzęsy & Brwi</th>
@@ -152,11 +156,9 @@
             <section id="#pedicure" class="container py-3">
                 <div class="dropdown">
                     <a class="btn btn-secondary dropdown-toggle btn-lg" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Pedicure
-                    </a>
+                        aria-expanded="false"><span>Pedicure</span></a>
                     <div class="dropdown-menu price-menu position-relative" id="forcetranslate">
-                        <table class="table">
+                        <table class="table table-striped">
                             <thead class="thead-dark">
                                 <tr>
                                     <th scope="col">Pedicure</th>
@@ -185,11 +187,9 @@
             <section id="#depilacja" class="container py-3">
                 <div class="dropdown">
                     <a class="btn btn-secondary dropdown-toggle btn-lg" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Depilacja
-                    </a>
+                        aria-expanded="false"><span>Depilacja</span></a>
                     <div class="dropdown-menu price-menu position-relative " id="forcetranslate">
-                        <table class="table">
+                        <table class="table table-striped">
                             <thead class="thead-dark">
                                 <tr>
                                     <th scope="col">Depilacja</th>
@@ -221,9 +221,9 @@
                         aria-expanded="false">
                         Zabiegi
                     </a>
-                    <div class="dropdown-menu price-menu position-relative " id="forcetranslate">
-                        <table class="table">
-                            <thead class="thead-dark">
+                    <div class="dropdown-menu price-menu position-relative scrollable-table " id="forcetranslate">
+                        <table class="table table-striped">
+                            <thead>
                                 <tr>
                                     <th scope="col">Depilacja</th>
                                     <th scope="col">Cena</th>
@@ -242,10 +242,45 @@
                                     <td>Przedłużanie</td>
                                     <td>160 zl</td>
                                 </tr>
+                                <tr>
+                                    <td>Hybrydowy</td>
+                                    <td>110 zl</td>
+                                </tr>
+                                <tr>
+                                    <td>Hybrydowy</td>
+                                    <td>110 zl</td>
+                                </tr>
+                                <tr>
+                                    <td>Hybrydowy</td>
+                                    <td>110 zl</td>
+                                </tr>
+                                <tr>
+                                    <td>Hybrydowy</td>
+                                    <td>110 333zl</td>
+                                </tr>
+                                <tr>
+                                    <td>Hybrydowy</td>
+                                    <td>110 333zl</td>
+                                </tr>
+                                <tr>
+                                    <td>Hybrydowy</td>
+                                    <td>110 333zl</td>
+                                </tr>
+                                <tr>
+                                    <td>Hybrydowy</td>
+                                    <td>110 333zl</td>
+                                </tr>
+                                <tr>
+                                    <td>Hybrydowy</td>
+                                    <td>110 421333zl</td>
+                                </tr>
                             </tbody>
                         </table>
+
+
                     </div>
                 </div>
+
             </section>
 
 
@@ -255,7 +290,7 @@
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer position-relative">
         <div class="wrapper">
 
             <div class="footer__boxes">
@@ -289,7 +324,7 @@
                 </div>
             </div>
         </div>
-        <hr>
+
         <p class="footer__bottom-text"> &copy; <span class="footer__year"></span> Zakątek Urody made by Artur Konarski
         </p>
 
