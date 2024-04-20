@@ -441,6 +441,23 @@ nav .navbar-toggler:focus {
   font-size: 14px;
 }
 
+.carousel-inner {
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item {
+  position: relative;
+  top: 0;
+  left: 35%;
+  height: 40%;
+  width: 30%;
+}
+.carousel-item img {
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 576px) {
   .scrollable-table {
     height: 200px;
