@@ -324,6 +324,17 @@ nav .navbar-toggler:focus {
   font-size: 18px;
 }
 
+.personelphoto {
+  border-radius: 50%;
+  border: 2px solid #dfc388;
+  filter: grayscale(10%);
+  transition: 0.3s ease-in-out;
+}
+
+.personelphoto:hover {
+  filter: grayscale(0);
+}
+
 .pricing-image {
   position: absolute;
   background-image: url(../img/heroImageBig.jpeg);
@@ -387,6 +398,11 @@ nav .navbar-toggler:focus {
 .scrollable-table {
   height: 300px;
   overflow-y: auto;
+}
+
+.carousel-item img {
+  object-fit: contain;
+  height: 400px;
 }
 
 .footer {
@@ -504,4 +520,4 @@ nav .navbar-toggler:focus {
     filter: blur(0px);
     opacity: 1;
   }
-}/*# sourceMappingURL=main.css.map */
+}

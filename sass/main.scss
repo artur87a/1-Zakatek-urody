@@ -44,6 +44,9 @@ html {
   overflow: hidden;
 }
 
+
+
+
 //==========================================
 // NAV
 //==========================================
@@ -247,6 +250,19 @@ nav {
   }
 }
 
+.personelphoto{
+  border-radius: 50%;
+  border: 2px solid $gold-color;
+  filter: grayscale(10%);
+  transition: .3s ease-in-out;
+}
+
+  
+
+.personelphoto:hover{
+  filter: grayscale(0);
+}
+
 //==========================================
 // PRICING TABLE
 //==========================================
@@ -325,9 +341,20 @@ nav {
 }
 
 .scrollable-table {
-  height: 300px; //
+  height: 300px; 
   overflow-y: auto;
 }
+//==========================================
+// Services
+//==========================================
+.carousel-item{
+img{
+  object-fit: contain;
+  height: 400px;
+  
+}
+}
+
 
 // .dropdown-menu .table tbody tr:nth-of-type(even) {
 //   background-color: #a10c0c !important;
