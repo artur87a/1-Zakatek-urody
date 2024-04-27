@@ -5,6 +5,8 @@
   position: relative;
   height: 100vh;
   transition: all;
+  -webkit-transition: transition all;
+
 
   img {
     position: relative;
@@ -19,6 +21,7 @@
     width: 40%;
     border-radius: 50%;
     animation: animate 4s both;
+    -webkit-animation: animate 4s both;
   }
   img:nth-child(2) {
     position: absolute;
@@ -27,6 +30,7 @@
     object-fit: cover;
     object-position: 35% 50%;
     animation: animate1 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s both;
+    -webkit-animation: animate1 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s both;
   }
 
   .slide-out-bck-center {

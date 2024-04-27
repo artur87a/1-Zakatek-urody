@@ -5,6 +5,7 @@
   position: relative;
   height: 100vh;
   transition: all;
+  -webkit-transition: transition all;
 }
 .animationImage img {
   position: relative;
@@ -18,6 +19,7 @@
   width: 40%;
   border-radius: 50%;
   animation: animate 4s both;
+  -webkit-animation: animate 4s both;
 }
 .animationImage img:nth-child(2) {
   position: absolute;
@@ -26,6 +28,7 @@
   object-fit: cover;
   object-position: 35% 50%;
   animation: animate1 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s both;
+  -webkit-animation: animate1 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s both;
 }
 .animationImage .slide-out-bck-center {
   -webkit-animation: slide-out-bck-center 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
