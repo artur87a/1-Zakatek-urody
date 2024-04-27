@@ -14,6 +14,7 @@
   opacity: 1;
   height: auto;
   width: auto;
+  transform: translateZ(0);
 }
 .animationImage img:nth-child(1) {
   position: absolute;
