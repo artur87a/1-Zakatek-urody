@@ -221,6 +221,9 @@ nav {
     h3 {
       font-size: 18px;
     }
+    p{
+      font-size: 12px;
+    }
     &:hover {
       transform: scale(1.01);
     }
@@ -240,13 +243,13 @@ nav {
   flex-wrap: wrap;
   h3 {
     margin-top: 5%;
-    font-size: 36px;
+    font-size: 18px;
   }
   h4 {
-    font-size: 28px;
+    font-size: 16px;
   }
   p {
-    font-size: 18px;
+    font-size: 12px;
   }
 }
 
@@ -461,6 +464,7 @@ img{
 @media screen and (min-width: 1200px) {
   .animationImage img:nth-of-type(2) {
     content: url("../img/heroImageBig.jpeg");
+    height: 100vh;
   }
 
   .animation-text {
@@ -493,6 +497,19 @@ img{
         transform: scale(1.15);
       }
     }
+  }
+  .aboutus-image-text{
+    margin-top: 80px;
+    h3 {
+        margin-top: 5%;
+        font-size: 36px;
+      }
+      h4 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 18px;
+      }
   }
 }
 .pricing-image {

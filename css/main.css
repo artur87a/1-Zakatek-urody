@@ -3,7 +3,9 @@
   display: flex;
   justify-content: center;
   position: relative;
-  height: 100vh;
+  height: 600px;
+  background-image: cover;
+  background-position: 50%;
   transition: all;
   -webkit-transition: transition all;
 }
@@ -318,6 +320,9 @@ nav .navbar-toggler:focus {
 .aboutus-box h3 {
   font-size: 18px;
 }
+.aboutus-box p {
+  font-size: 12px;
+}
 .aboutus-box:hover {
   transform: scale(1.01);
 }
@@ -335,13 +340,13 @@ nav .navbar-toggler:focus {
 }
 .aboutus-image-text h3 {
   margin-top: 5%;
-  font-size: 36px;
+  font-size: 18px;
 }
 .aboutus-image-text h4 {
-  font-size: 28px;
+  font-size: 16px;
 }
 .aboutus-image-text p {
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .personelphoto {
@@ -490,6 +495,7 @@ nav .navbar-toggler:focus {
 @media screen and (min-width: 1200px) {
   .animationImage img:nth-of-type(2) {
     content: url("../img/heroImageBig.jpeg");
+    height: 100vh;
   }
   .animation-text {
     position: absolute;
@@ -517,6 +523,19 @@ nav .navbar-toggler:focus {
   }
   .aboutus-box:hover {
     transform: scale(1.15);
+  }
+  .aboutus-image-text {
+    margin-top: 80px;
+  }
+  .aboutus-image-text h3 {
+    margin-top: 5%;
+    font-size: 36px;
+  }
+  .aboutus-image-text h4 {
+    font-size: 28px;
+  }
+  .aboutus-image-text p {
+    font-size: 18px;
   }
 }
 .pricing-image {
