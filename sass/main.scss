@@ -210,7 +210,7 @@ nav {
 .aboutus {
   color: black;
   p {
-    text-shadow: $text-shadow;
+    // text-shadow: $text-shadow;
   }
   &-icon {
     font-size: 14px;
@@ -353,7 +353,7 @@ nav {
 .carousel-item{
 img{
   object-fit: contain;
-  height: 400px;
+  height: 40vh;
   
 }
 }
@@ -462,9 +462,11 @@ img{
 }
 
 @media screen and (min-width: 1200px) {
-  .animationImage img:nth-of-type(2) {
-    content: url("../img/heroImageBig.jpeg");
+  .animationImage{
     height: 100vh;
+    img:nth-of-type(2){
+    content: url("../img/heroImageBig.jpeg");
+  }
   }
 
   .animation-text {
@@ -491,7 +493,7 @@ img{
         font-size: 24px;
       }
       p {
-        font-size: 11px;
+        font-size: 14px;
       }
       &:hover {
         transform: scale(1.15);

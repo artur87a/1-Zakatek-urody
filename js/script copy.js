@@ -2,8 +2,6 @@ const footerYear = document.querySelector(".footer__year");
 
 const redirectLink = document.getElementById('redirectLink');
 
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const nav = document.querySelector(".navbar");
 
@@ -45,34 +43,29 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-////////// Redirecting message///////////////
 
-
-const targetUrl = "https://booksy.com/pl-pl/157520_zakatek-urody_paznokcie_23280_lodz";
 
 redirectLink.addEventListener('click', (event) => {
-  const currentUrl = window.location.href;
-  
-  if (targetUrl !== currentUrl) {
-      event.preventDefault(); 
-      alert('Ten odnośnik przeniesie Cię na zewnętrzną stronę, aby dokonać rezerwacji terminu');
+    const targetUrl = event.target.href;
+    const currentUrl = window.location.href;
 
-      
-      setTimeout(() => {
-          openWindow(targetUrl); 
+    if (targetUrl !== currentUrl) {
+        event.preventDefault(); // Prevent the default action of following the link
+        alert('Ten odnosnik przeniesie cie na zewnetrzna strone aby dokonac rezerwacji terminu');
+        setTimeout(() => {
+          window.open("https://booksy.com/pl-pl/157520_zakatek-urody_paznokcie_23280_lodz", "_blank");
       }, 1000);
-  }
-});
+    }
 
+});
 function openWindow(url) {
   const newWindow = window.open(url, "_blank");
   if (!newWindow || newWindow.closed || typeof newWindow.closed == 'undefined') {
-     
+      // Pop-up window was blocked
+      // You can notify the user or provide an alternative action here
       alert("Twoja przeglądarka zablokowała otwarcie nowego okna. Spróbuj ponownie.");
   }
 }
-
-
 // document.addEventListener("DOMContentLoaded", function () {
 //   const dropdownToggleButtons = document.querySelectorAll(
 //     ".price-menu .dropdown-toggle"

@@ -307,9 +307,6 @@ nav .navbar-toggler:focus {
 .aboutus {
   color: black;
 }
-.aboutus p {
-  text-shadow: 1px 1px 10px rgb(74, 74, 73);
-}
 .aboutus-icon {
   font-size: 14px;
 }
@@ -427,7 +424,7 @@ nav .navbar-toggler:focus {
 
 .carousel-item img {
   object-fit: contain;
-  height: 400px;
+  height: 40vh;
 }
 
 .footer {
@@ -493,9 +490,11 @@ nav .navbar-toggler:focus {
   }
 }
 @media screen and (min-width: 1200px) {
+  .animationImage {
+    height: 100vh;
+  }
   .animationImage img:nth-of-type(2) {
     content: url("../img/heroImageBig.jpeg");
-    height: 100vh;
   }
   .animation-text {
     position: absolute;
@@ -519,7 +518,7 @@ nav .navbar-toggler:focus {
     font-size: 24px;
   }
   .aboutus-box p {
-    font-size: 11px;
+    font-size: 14px;
   }
   .aboutus-box:hover {
     transform: scale(1.15);
