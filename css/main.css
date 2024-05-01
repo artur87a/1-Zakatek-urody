@@ -359,15 +359,10 @@ nav .navbar-toggler:focus {
 }
 
 .pricing-image {
-  position: absolute;
   background-image: url(../img/heroImageBig.jpeg);
-  height: 100%;
-  width: 100%;
+  padding-top: 100px;
   background-size: cover;
   background-attachment: fixed;
-  object-fit: cover;
-  object-position: 35% 50%;
-  padding: 160px;
 }
 
 .section-title-pricing {
@@ -426,6 +421,10 @@ nav .navbar-toggler:focus {
 .carousel-item img {
   object-fit: contain;
   height: 40vh;
+}
+
+.contact {
+  color: black;
 }
 
 .footer {
@@ -538,10 +537,6 @@ nav .navbar-toggler:focus {
     font-size: 18px;
   }
 }
-.pricing-image {
-  padding: 70px 5px;
-}
-
 @keyframes slidedown {
   from {
     transform: translateY(-10%);

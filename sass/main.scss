@@ -209,9 +209,6 @@ nav {
 
 .aboutus {
   color: black;
-  p {
-    // text-shadow: $text-shadow;
-  }
   &-icon {
     font-size: 14px;
   }
@@ -276,15 +273,15 @@ nav {
 // }
 
 .pricing-image {
-  position: absolute;
+  // position: absolute;
   background-image: url(../img/heroImageBig.jpeg);
-  height: 100%;
-  width: 100%;
+  padding-top: 100px;
   background-size: cover;
   background-attachment: fixed;
-  object-fit: cover;
-  object-position: 35% 50%;
-  padding: 160px;
+  // background-position: top;
+  // object-fit: cover;
+  // object-position: 90% 50%;
+  // padding: 160px;
 }
 
 .section-title-pricing {
@@ -362,6 +359,16 @@ img{
 // .dropdown-menu .table tbody tr:nth-of-type(even) {
 //   background-color: #a10c0c !important;
 // }
+
+//==========================================
+// Contact
+//==========================================
+.contact{
+  color: black;
+}
+
+
+
 //==========================================
 // FOOTER
 //==========================================
@@ -514,9 +521,9 @@ img{
       }
   }
 }
-.pricing-image {
-  padding: 70px 5px;
-}
+// .pricing-image {
+//   // padding: 70px 5px;
+// }
 
 @keyframes slidedown {
   from {
