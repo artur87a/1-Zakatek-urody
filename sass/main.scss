@@ -69,7 +69,11 @@ nav {
 
 .navbar-brand {
   font-weight: bold;
+  font-size: 20px;
   span {
+    color: $gold-color;
+  }
+  &:hover{
     color: $gold-color;
   }
 }
@@ -101,23 +105,23 @@ nav {
 .navbar-nav .show > .nav.link {
   color: $gold-color;
 }
-.dropdown-menu {
-  background-color: black;
-  border-color: white;
-  width: 100%;
-  display: none;
-  show {
-    display: block;
-  }
-}
+// .dropdown-menu {
+//   background-color: black;
+//   border-color: white;
+//   width: 100%;
+//   display: none;
+//   show {
+//     display: block;
+//   }
+// }
 
-.dropdown-item {
-  color: white;
-  transition: all 0.3s ease-in-out;
-}
-.dropdown-item:hover {
-  color: $gold-color;
-}
+// .dropdown-item {
+//   color: white;
+//   transition: all 0.3s ease-in-out;
+// }
+// .dropdown-item:hover {
+//   color: $gold-color;
+// }
 
 // .dropdown-menu show {
 //   position: relative;
@@ -478,11 +482,10 @@ img{
 
   .animation-text {
     position: absolute;
-    top: 15%;
-    transform: translateY(40%);
-    left: 50%;
+    top: 10%;
+    transform: translateY(20%);
+    left: 40%;
     padding: 16px;
-    text-shadow: 1px 1px 1px black;
     animation: textDelay 7s ease-in-out;
     h1 {
       font-size: 36px;
