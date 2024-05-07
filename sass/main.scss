@@ -457,6 +457,13 @@ img{
   .scrollable-table {
     height: 200px;
   }
+  .animationImage{
+    img:nth-child(1){
+      top: 30%;
+      scale: 2;
+
+  }
+}
 }
 
 @media screen and (min-width: 576px) {

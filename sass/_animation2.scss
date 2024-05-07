@@ -6,17 +6,17 @@
   height: 600px;
   background-image: cover;
   background-position: 50%;
-  transition: all;
-  -webkit-transition: transition all;
+  transition: all 0.3 ease;
+  -webkit-transition: transition all 0.3 ease;
 
 
-  img {
-    position: relative;
-    opacity: 1;
-    height: auto;
-    width: auto;
-    transform: translateZ(0);
-  }
+  // img {
+  //   position: relative;
+  //   opacity: 1;
+  //   height: auto;
+  //   width: auto;
+  //   transform: translateZ(0);
+  // }
 
   img:nth-child(1) {
     position: absolute;
