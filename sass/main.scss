@@ -105,39 +105,16 @@ nav {
 .navbar-nav .show > .nav.link {
   color: $gold-color;
 }
-// .dropdown-menu {
-//   background-color: black;
-//   border-color: white;
-//   width: 100%;
-//   display: none;
-//   show {
-//     display: block;
-//   }
-// }
-
-// .dropdown-item {
-//   color: white;
-//   transition: all 0.3s ease-in-out;
-// }
-// .dropdown-item:hover {
-//   color: $gold-color;
-// }
-
-// .dropdown-menu show {
-//   position: relative;
-//   display: block;
-//   margin: 0;
-//   width: 100%;
-//   height: 200%;
-//   transform: translate(0, 59px);
-//   background-color: #ffffff; // Set background color
-//   border: 1px solid #cccccc; // Add border
-//   border-radius: 4px; // Add border radius
-//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Add box shadow
-//   padding: 10px; // Add padding
-//   z-index: 1000; // Adjust z-index if needed
-//   pointer-events: none;
-// }
+.dropdown-menu {
+  background-color: transparent;
+  border-color: white;
+  width: 100%;
+  display: none;
+  show {
+    display: block;
+    pointer-events: none;
+  }
+}
 
 //==========================================
 // HEADER BUTTON
@@ -271,22 +248,14 @@ nav {
 //==========================================
 // PRICING TABLE
 //==========================================
-// .pricing-table {
-//   font-size: 16px;
-//   opacity: 0.9;
-//   padding: 30px 30px;
-// }
 
 .pricing-image {
-  // position: absolute;
+ 
   background-image: url(../img/heroImageBig.jpeg);
   padding-top: 100px;
   background-size: cover;
   background-attachment: fixed;
-  // background-position: top;
-  // object-fit: cover;
-  // object-position: 90% 50%;
-  // padding: 160px;
+  
 }
 
 .section-title-pricing {
@@ -300,7 +269,7 @@ nav {
 }
 
 .btn {
-  font-size: 30px;
+  font-size: 24px;
   background-color: black;
   opacity: 0.7;
   width: 100%;
@@ -320,33 +289,27 @@ nav {
   pointer-events: none;
 }
 
-// main .dropdown-toggle::after {
-//   border-bottom: 0.01em solid;
-// }
+
 
 .price-menu {
   // background-color: transparent;
-  font-size: 20px;
-  text-align: center;
-  z-index: 1000;
-  
-  
+  font-size: 18px;
+  text-align: center; 
 }
 
-// .table {
-//   animation: 0.8s focus;
-//   border-collapse: collapse;
-//   color: red;
-//   width: 100%;
 
-//   // tbody tr :nth-of-type(even) {
-//   //   background-color: red;
-//   // }
-// }
 
-.scrollable-table {
+// tbody tr :nth-of-type(even) {
+//     background-color: gray;
+//   }
+
+  .scrollable-table {
   height: 300px; 
   overflow-y: auto;
+}
+.table-disabled{
+  pointer-events: none;
+  
 }
 //==========================================
 // Services
@@ -364,9 +327,7 @@ img{
 }
 
 
-// .dropdown-menu .table tbody tr:nth-of-type(even) {
-//   background-color: #a10c0c !important;
-// }
+
 
 //==========================================
 // Contact

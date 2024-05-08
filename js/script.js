@@ -50,8 +50,9 @@ function topFunction() {
 
 const targetUrl = "https://booksy.com/pl-pl/157520_zakatek-urody_paznokcie_23280_lodz";
 
+const currentUrl = window.location.href;
+console.log("currentUrl:",currentUrl)
 redirectLink.addEventListener('click', (event) => {
-  const currentUrl = window.location.href;
   
   if (targetUrl !== currentUrl) {
       event.preventDefault(); 

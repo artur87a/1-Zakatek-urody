@@ -223,6 +223,17 @@ nav .navbar-toggler:focus {
   color: #dfc388;
 }
 
+.dropdown-menu {
+  background-color: transparent;
+  border-color: white;
+  width: 100%;
+  display: none;
+}
+.dropdown-menu show {
+  display: block;
+  pointer-events: none;
+}
+
 .btn-contact {
   position: relative;
   display: inline-block;
@@ -353,7 +364,7 @@ nav .navbar-toggler:focus {
 }
 
 .btn {
-  font-size: 30px;
+  font-size: 24px;
   background-color: black;
   opacity: 0.7;
   width: 100%;
@@ -374,14 +385,17 @@ nav .navbar-toggler:focus {
 }
 
 .price-menu {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
-  z-index: 1000;
 }
 
 .scrollable-table {
   height: 300px;
   overflow-y: auto;
+}
+
+.table-disabled {
+  pointer-events: none;
 }
 
 .carousel-item img {
