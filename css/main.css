@@ -168,6 +168,10 @@ html {
   overflow: hidden;
 }
 
+.no-bullets li {
+  list-style-type: none;
+}
+
 nav {
   text-transform: uppercase;
   font-weight: 500;
@@ -541,4 +545,4 @@ nav .navbar-toggler:focus {
     filter: blur(0px);
     opacity: 1;
   }
-}
+}/*# sourceMappingURL=main.css.map */

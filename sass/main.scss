@@ -44,8 +44,9 @@ html {
   overflow: hidden;
 }
 
-
-
+.no-bullets li {
+  list-style-type: none;
+}
 
 //==========================================
 // NAV
@@ -73,7 +74,7 @@ nav {
   span {
     color: $gold-color;
   }
-  &:hover{
+  &:hover {
     color: $gold-color;
   }
 }
@@ -200,7 +201,7 @@ nav {
     h3 {
       font-size: 18px;
     }
-    p{
+    p {
       font-size: 12px;
     }
     &:hover {
@@ -232,16 +233,14 @@ nav {
   }
 }
 
-.personelphoto{
+.personelphoto {
   border-radius: 50%;
   border: 2px solid $gold-color;
   filter: grayscale(10%);
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-  
-
-.personelphoto:hover{
+.personelphoto:hover {
   filter: grayscale(0);
 }
 
@@ -250,12 +249,10 @@ nav {
 //==========================================
 
 .pricing-image {
- 
   background-image: url(../img/heroImageBig.jpeg);
   padding-top: 100px;
   background-size: cover;
   background-attachment: fixed;
-  
 }
 
 .section-title-pricing {
@@ -281,7 +278,6 @@ nav {
 
 .dropdown-menu {
   animation: 1s slidedown ease-in-out;
-  
 }
 
 #forcetranslate {
@@ -289,54 +285,43 @@ nav {
   pointer-events: none;
 }
 
-
-
 .price-menu {
   // background-color: transparent;
   font-size: 18px;
-  text-align: center; 
+  text-align: center;
 }
-
-
 
 // tbody tr :nth-of-type(even) {
 //     background-color: gray;
 //   }
 
-  .scrollable-table {
-  height: 300px; 
+.scrollable-table {
+  height: 300px;
   overflow-y: auto;
 }
-.table-disabled{
+.table-disabled {
   pointer-events: none;
-  
 }
 //==========================================
 // Services
 //==========================================
-.carousel-item{
-img{
-  object-fit: contain;
-  height: 40vh;
-  
-}
+.carousel-item {
+  img {
+    object-fit: contain;
+    height: 40vh;
+  }
 }
 
-.table{
+.table {
   pointer-events: none;
 }
-
-
-
 
 //==========================================
 // Contact
 //==========================================
-.contact{
+.contact {
   color: black;
 }
-
-
 
 //==========================================
 // FOOTER
@@ -422,13 +407,12 @@ img{
   .scrollable-table {
     height: 200px;
   }
-  .animationImage{
-    img:nth-child(1){
+  .animationImage {
+    img:nth-child(1) {
       top: 30%;
       scale: 2;
-
+    }
   }
-}
 }
 
 @media screen and (min-width: 576px) {
@@ -445,11 +429,11 @@ img{
 }
 
 @media screen and (min-width: 1200px) {
-  .animationImage{
+  .animationImage {
     height: 100vh;
-    img:nth-of-type(2){
-    content: url("../img/heroImageBig.jpeg");
-  }
+    img:nth-of-type(2) {
+      content: url("../img/heroImageBig.jpeg");
+    }
   }
 
   .animation-text {
@@ -482,18 +466,18 @@ img{
       }
     }
   }
-  .aboutus-image-text{
+  .aboutus-image-text {
     margin-top: 80px;
     h3 {
-        margin-top: 5%;
-        font-size: 36px;
-      }
-      h4 {
-        font-size: 28px;
-      }
-      p {
-        font-size: 18px;
-      }
+      margin-top: 5%;
+      font-size: 36px;
+    }
+    h4 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 18px;
+    }
   }
 }
 // .pricing-image {
